@@ -9,17 +9,18 @@ POST http://localhost:3000/authors/
 Content-Type: application/json
 
 {
-    "author_name": "Valeton 777"
+    "author_name": "Valeton sin id",
+    "dato-que-no-se-guarda": "not-found"
 }
 ###------------------------------------------
 ### ELIMINAR AUTOR
-DELETE http://localhost:3000/authors/14
+DELETE http://localhost:3000/authors/23
 ###------------------------------------------
 ### EDITAR AUTOR
-PATCH http://localhost:3000/authors/10
+PATCH http://localhost:3000/authors/9
 Content-Type: application/json
 
 {
-    "author_name": "Yo soy el 10 :B"
+    "author_name": "Number 9"
 }
 ###------------------------------------------
