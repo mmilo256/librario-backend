@@ -1,0 +1,25 @@
+### OBTENER TODOS LOS AUTORES
+GET http://localhost:3000/authors
+###------------------------------------------
+### OBTENER AUTOR POR ID
+GET http://localhost:3000/authors/3
+###------------------------------------------
+### CREAR AUTOR
+POST http://localhost:3000/authors/
+Content-Type: application/json
+
+{
+    "author_name": "Valeton 777"
+}
+###------------------------------------------
+### ELIMINAR AUTOR
+DELETE http://localhost:3000/authors/14
+###------------------------------------------
+### EDITAR AUTOR
+PATCH http://localhost:3000/authors/10
+Content-Type: application/json
+
+{
+    "author_name": "Yo soy el 10 :B"
+}
+###------------------------------------------
