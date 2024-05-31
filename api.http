@@ -25,7 +25,7 @@ Content-Type: application/json
 }
 ###------------------------------------------
 
-
+###===============================================================================
 
 ### OBTENER TODOS LOS GÉNEROS
 GET http://localhost:3000/genres
@@ -51,5 +51,38 @@ Content-Type: application/json
 
 {
     "genre": "Sci-Fi"
+}
+###------------------------------------------
+
+###===============================================================================
+
+### OBTENER TODOS LOS LIBROS
+GET http://localhost:3000/books
+###------------------------------------------
+### OBTENER LIBRO POR ID
+GET http://localhost:3000/books/1
+###------------------------------------------
+### CREAR LIBRO
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+    "title": "Luna de Plutón",
+    "book_desc": "Fantasía en la luna y hay un tren y una gigante y un duende y otras weás no sé no lo terminé xD",
+    "image_url": "aimayen",
+    "author_id": 2,
+    "genre_id": 4,
+    "dato-que-no-se-guarda": "not-found"
+}
+###------------------------------------------
+### ELIMINAR LIBRO
+DELETE http://localhost:3000/books/10
+###------------------------------------------
+### EDITAR LIBRO
+PATCH http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+    "title": "Cien años de soledad"
 }
 ###------------------------------------------
