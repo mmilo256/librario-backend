@@ -2,25 +2,54 @@
 GET http://localhost:3000/authors
 ###------------------------------------------
 ### OBTENER AUTOR POR ID
-GET http://localhost:3000/authors/3
+GET http://localhost:3000/authors/10
 ###------------------------------------------
 ### CREAR AUTOR
 POST http://localhost:3000/authors/
 Content-Type: application/json
 
 {
-    "author_name": "Valeton sin id",
+    "author_name": "Toffito",
     "dato-que-no-se-guarda": "not-found"
 }
 ###------------------------------------------
 ### ELIMINAR AUTOR
-DELETE http://localhost:3000/authors/23
+DELETE http://localhost:3000/authors/9
 ###------------------------------------------
 ### EDITAR AUTOR
-PATCH http://localhost:3000/authors/9
+PATCH http://localhost:3000/authors/10
 Content-Type: application/json
 
 {
-    "author_name": "Number 9"
+    "author_name": "Capricho"
+}
+###------------------------------------------
+
+
+
+### OBTENER TODOS LOS GÉNEROS
+GET http://localhost:3000/genres
+###------------------------------------------
+### OBTENER GÉNERO POR ID
+GET http://localhost:3000/genres/4
+###------------------------------------------
+### CREAR GÉNERO
+POST http://localhost:3000/genres/
+Content-Type: application/json
+
+{
+    "genre": "Horror",
+    "dato-que-no-se-guarda": "not-found"
+}
+###------------------------------------------
+### ELIMINAR AUTOR
+DELETE http://localhost:3000/genres/6
+###------------------------------------------
+### EDITAR AUTOR
+PATCH http://localhost:3000/genres/3
+Content-Type: application/json
+
+{
+    "genre": "Sci-Fi"
 }
 ###------------------------------------------
